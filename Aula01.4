@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class exercicio04 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("Digite o salário bruto: R$ ");
+            double salarioBruto = scanner.nextDouble ();
+
+            double descontoIR;
+            String faixaSalarial;
+
+            if (salarioBruto <= 900) {
+                descontoIR = 0;
+                faixaSalarial = "Isento";
+            } else if (salarioBruto <= 1500) {
+                descontoIR = salarioBruto * 0.05;
+                faixaSalarial = "Desconto de 5%";
+            } else if (salarioBruto <= 2500) {
+                descontoIR = salarioBruto * 0.1;
+                faixaSalarial = "Desconto de 10%";
+            } else {
+                descontoIR = salarioBruto * 0.2;
+                faixaSalarial = "Desconto de 20%";
+            }
+
+            double salarioLiquido = salarioBruto - descontoIR;
+
+            System.out.println("Faixa salarial: " + faixaSalarial);
+            System.out.printf("Desconto do IR: R$ %.2f\n", descontoIR);
+            System.out.printf("Salário líquido: R$ %.2f\n", salarioLiquido);
+
+    }
+}
