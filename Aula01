@@ -1,0 +1,23 @@
+// Questão 01
+
+public class exercicio01 {
+    public static void main(String[] args) {
+
+        double valorHora = 15.00;
+        int horasTrabalhadas = 40;
+
+        double salario = valorHora * horasTrabalhadas;
+
+        System.out.println("O salário do funcionário é: R$" + salario);
+
+        // atribuindo valores para teste:
+        valorHora = 42.00;
+        horasTrabalhadas = 50;
+        salario = valorHora * horasTrabalhadas;
+        System.out.println("O salário teste é: R$" + salario);
+
+
+    }
+
+
+}
