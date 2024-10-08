@@ -1,0 +1,14 @@
+public class exercicio02 {
+    public static void main(String[] args) {
+        int numero01 = 36;
+        int numero02 = 45;
+
+        if (numero01 > numero02){
+            System.out.println(numero01 + " é maior que " + numero02);
+        }   else if (numero01 < numero02) {
+            System.out.println(numero01 + " é menor que " + numero02);
+        }   else {
+            System.out.println(numero01 + " é igual a " + numero02);
+        }
+    }
+}
